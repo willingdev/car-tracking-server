@@ -40,7 +40,7 @@ public class MainApp {
         ByteVector data = serverController.read();
         if(data!=null) {
 
-            Logger.info(new Date() + " Recev:" + data.toString());
+            Logger.info(new Date() + " Recev:" + new String(data.toByteArray()));
         }
 
     }

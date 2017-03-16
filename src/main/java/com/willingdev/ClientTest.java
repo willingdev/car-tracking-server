@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
  */
 public class ClientTest {
     public static void  main(String[] args) throws IOException {
-        Socket echoSocket = new Socket("127.0.0.1", 8888);
+        Socket echoSocket = new Socket("139.59.96.48", 8888);
         DataOutputStream outToServer = new DataOutputStream(echoSocket.getOutputStream());
         outToServer.writeBytes("Hellow\n");
         outToServer.flush();
